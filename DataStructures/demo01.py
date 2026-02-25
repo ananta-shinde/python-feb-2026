@@ -1,5 +1,5 @@
 
-fruits = [20,45,56,12,56,58]
+fruits = []
 print(type(fruits))
 
 #adding new value to list
@@ -9,7 +9,7 @@ fruits.append(30)
 fruits[1] = 40
 
 #delete last value from list
-fruits.pop(0)
+fruits.pop(2)
 
 # fruits.pop()
 
