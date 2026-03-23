@@ -10,6 +10,6 @@ for x in range(3):
     student["maths"] = float(input("enter your marks for Maths:"))
     studentData.append(student)
 
-
-for x in studentData:
-    print(x)
+print("rollno  name   physics  chemistry  maths")
+for student in studentData:
+    print(student["rollNo"] +" "+student["name"]+" "+str(student["phy"])+" "+str(student["chem"])+" "+str(student["maths"]))
