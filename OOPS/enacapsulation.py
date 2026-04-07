@@ -1,24 +1,27 @@
 
-class ListStorage:
+class Student:
+    rollno = None
+    name = None
+    email = None
+    __password = None
+    contact = None
+    address = None
 
-    def __init__(self):
-        self.datalist = []
-
-    def AddData(self,data):
-        self.datalist.append(data)
-
-    def printData(self):
-        for student in self.datalist:
-            print(student)
-
+    def printStudentData(self):
+        print(self.name + " "+self.email+" "+ self.address)
 
 
-slist = ListStorage()
-plsit = ListStorage()
 
-slist.AddData("student")
-slist.printData()
+s1 = Student()
+s2 = Student()
 
-plsit.AddData("product")
-plsit.printData()
-
+s1.name = "Ananta"
+s1.email = "demo@gmail.com"
+s1.demo = "dsasdasdasd"
+s1.address = "pune"
+s2.name = "Rahul"
+s2.email = "example@gmail.com"
+s2.address = "mumbai"
+s1.printStudentData()
+s2.printStudentData()
+print(s1.password)
