@@ -1,27 +1,35 @@
 
-class Student:
-    rollno = None
+class Address:
+    atPost =None
+    city = None
+    state = None
+    country =None
+    pincode = None
+class College:
+    id = None
     name = None
     email = None
-    __password = None
     contact = None
-    address = None
+    address = Address()
 
-    def printStudentData(self):
-        print(self.name + " "+self.email+" "+ self.address)
+class Departmant:
+    id = None
+    name = None
+class Teacher:
+    empId = None
+    name = None
+    email = None
+    salary = None
+    contact = None
+    address = Address()
+    department = Departmant()
+
+class Student:
+    prn = None
+    name = None
+    email = None
+    contact = None
+    address = Address()
+    department = Departmant()
 
 
-
-s1 = Student()
-s2 = Student()
-
-s1.name = "Ananta"
-s1.email = "demo@gmail.com"
-s1.demo = "dsasdasdasd"
-s1.address = "pune"
-s2.name = "Rahul"
-s2.email = "example@gmail.com"
-s2.address = "mumbai"
-s1.printStudentData()
-s2.printStudentData()
-print(s1.password)
